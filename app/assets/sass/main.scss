@@ -1,0 +1,69 @@
+@import "bourbon";
+
+// Core variables and mixins
+@import "../libs/bootstrap/scss/variables";
+@import "../libs/bootstrap/scss/mixins";
+@import "../libs/bootstrap/scss/custom";
+
+// Core CSS
+@import "../libs/bootstrap/scss/images";
+@import "../libs/bootstrap/scss/code";
+@import "../libs/bootstrap/scss/tables";
+
+// Components
+@import "../libs/bootstrap/scss/transitions";
+@import "../libs/bootstrap/scss/button-group";
+@import "../libs/bootstrap/scss/input-group";
+@import "../libs/bootstrap/scss/custom-forms";
+@import "../libs/bootstrap/scss/card";
+@import "../libs/bootstrap/scss/pagination";
+@import "../libs/bootstrap/scss/jumbotron";
+@import "../libs/bootstrap/scss/alert";
+@import "../libs/bootstrap/scss/progress";
+@import "../libs/bootstrap/scss/media";
+@import "../libs/bootstrap/scss/list-group";
+@import "../libs/bootstrap/scss/responsive-embed";
+@import "../libs/bootstrap/scss/close";
+
+// Components w/ JavaScript
+@import "../libs/bootstrap/scss/modal";
+@import "../libs/bootstrap/scss/tooltip";
+@import "../libs/bootstrap/scss/popover";
+@import "../libs/bootstrap/scss/carousel";
+
+// My vars
+@import "vars";
+
+//Load Libs SASS
+@import "../libs/animate/animate.sass";
+
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	color: #666;
+}
+body input:required:valid,
+body textarea:required:valid {
+	color: #666;
+}
+
+//Custom Styles Here
+
+
+//ALWAYS END
+@import "media";
