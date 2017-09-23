@@ -34,19 +34,49 @@ body {
 	min-width: 320px;
 	position: relative;
 	line-height: 1.6;
-	font-family: "RobotoRegular", sans-serif;
+	font-family: 'PT Sans', sans-serif;
 	overflow-x: hidden;
 	min-height: 100vh;
 }
-nav {
-	height: 3.4rem;
+.firm-font {
+	font-family: 'Kurale', serif;
 }
-// header menu
-header {
-	& .logo {
-		max-height: 4rem;
+.btn-cust {
+	font-weight: 400;
+	position: relative;
+    background-color: $firm-color;
+    border: none;
+    color: #fff;
+    &:hover {
+    	background-color: $firm-color + #111;
+    }
+    &:visited {
+    	color: #fff;
+    }
+}
+.btn-outline-primary {
+	color: $firm-color;
+	border: .1rem solid $firm-color + #111;
+	&:hover {
+		background-color: $firm-color + #111;
+		border: none;
 	}
 }
+
+header {
+	position: relative;
+	height: 75vh;
+	min-height: 15rem;
+    background: url(http://monmartis.ru/assets/img/bg.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+.filter {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-color: rgba(0,0,0,.5);
+}
+
 .hidden {
 	display: none;
 }

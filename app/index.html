@@ -15,10 +15,7 @@
     <style>
       /* =include assets/css/hd/index_hd.min.css */
       
-      
     </style>
-    <!-- Header CSS (First Sections of Website: paste after release from _header.min.css here)-->
-    <style> </style>
     <!-- Load CSS & WebFonts Main Function-->
     <script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
     <!-- Load CSS Start-->
@@ -33,12 +30,31 @@
     </noscript>
   </head>
   <body>
-    <header style="border: .1rem solid black;">
-      <div class="container pt-2 pb-2">
+    <div class="container">
+      <nav class="navbar navbar-toggleable-md navbar-light">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand text-uppercase font-weight-bold firm-font mr-5" href="#">Monmartis</a>
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          </ul>
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <header class="d-flex align-items-center">
+      <div class="filter"></div>
+      <div class="container">
         <div class="row">
-          <div class="col-4"><img class="img-fluid logo" src="assets/img/logo.png"></div>
-          <div class="col-8 d-flex align-items-center justify-content-end">
-            <p class="mb-0 number firm-font">+7(905)315-20-07</p>
+          <div class="col-12 text-center">
+            <h1 class="text-white firm-font font-weight-bold mb-3">MONMARTIS</h1>
+            <h3 class="text-white">Официальный производитель стеновых 3D панелей из гипса в Казани.</h3><a class="btn btn-cust mt-5" href="#">Рассчитать стоимость</a>
+            <p class="text-white mt-3">Закажите звонок, за 5 минут мы подберем для вас панель и рассчитаем цену.</p>
           </div>
         </div>
       </div>

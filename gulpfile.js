@@ -3,7 +3,7 @@ var     gulp         = require('gulp'),
         cache        = require('gulp-cache'), // Чистим кеш при запуске галпа
 		sass         = require('gulp-sass'), 
 		autoprefixer = require('gulp-autoprefixer'),
-		minifycss    = require('gulp-minify-css'),
+		cleanCSS    = require('gulp-clean-css'),
 		rename       = require('gulp-rename'),
 		browserSync  = require('browser-sync').create(),
 		pug          = require('gulp-pug'),
@@ -29,13 +29,11 @@ gulp.task('clear', function (done) {
 });
 
 gulp.task('styles', function () {
-	return gulp.src('app/assets/sass/**/*.scss')
+	return gulp.src(['app/assets/sass/**/*.scss',])
 	.pipe(sass({
 		includePaths: require('node-bourbon').includePaths
 	}).on("error", notify.onError()))
 	.pipe(rename({suffix: '.min', prefix : ''}))
-	.pipe(autoprefixer({browsers: ['last 15 versions'], cascade: false}))
-	.pipe(minifycss())
 	.pipe(gulp.dest('app/assets/css'))
 	.pipe(browserSync.stream());
 });
