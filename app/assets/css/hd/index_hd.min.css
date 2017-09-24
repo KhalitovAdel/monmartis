@@ -4353,8 +4353,17 @@ body {
   overflow-x: hidden;
   min-height: 100vh; }
 
+.firm-color {
+  color: #4f8cff; }
+
 .firm-font {
   font-family: 'Kurale', serif; }
+
+.text-shadow-white {
+  text-shadow: .1rem .1rem .2rem #fff, .1rem .1rem .2rem #fff; }
+
+.standart-border {
+  border: 0.1rem solid rgba(0, 0, 0, 0.2); }
 
 .btn-cust {
   font-weight: 400;
@@ -4363,7 +4372,8 @@ body {
   border: none;
   color: #fff; }
   .btn-cust:hover {
-    background-color: #609dff; }
+    background-color: #609dff;
+    color: #fff; }
   .btn-cust:visited {
     color: #fff; }
 

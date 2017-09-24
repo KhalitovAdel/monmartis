@@ -91,7 +91,75 @@ body textarea:required:valid {
 }
 
 //Custom Styles Here
-
-
+@import "../libs/font-awesome/scss/font-awesome";
+.our-product {
+	position: relative;
+	overflow: hidden;
+	& .bg-mobile {
+		position: absolute;
+	}
+}
+.catalog {
+	& .card {
+		& a {
+			& .black-wrapp {
+				position: relative;
+			    width: 100%;
+			    height: 100%;
+			    & .black-window {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					&:hover {
+						transition: .3s;
+						background-color: rgba(0, 0, 0, .6);
+						& i {
+							transition: .3s;
+							visibility: visible;
+							font-size: 6rem;
+							color: #fff;
+						}				
+					}
+					& i {
+						visibility: hidden;
+						color: #fff;
+						font-size: 4rem;
+					}
+			    }
+			}
+		}
+	}
+}
+.comments {
+	& .carousel-indicators {
+		bottom: -.5rem;
+		& li {
+			background-color: $firm-color + #333;
+			&.active {
+				background-color: $firm-color;
+			} 
+		}
+	}
+}
+footer {
+	& address {
+		& p, .fa, a {
+			font-size: 1.3rem;
+		}
+		& p, a {
+			padding-left: .4rem;
+		}
+		& a {
+			color: $firm-color;
+			&:hover {
+		    	color: $firm-color + #222;
+		    	text-decoration: none;
+		    }
+		    &:visited {
+		    	color: $firm-color;
+		    }
+		}
+	}
+}
 //ALWAYS END
 @import "media";

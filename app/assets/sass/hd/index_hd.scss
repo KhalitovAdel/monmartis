@@ -38,8 +38,17 @@ body {
 	overflow-x: hidden;
 	min-height: 100vh;
 }
+.firm-color {
+	color: $firm-color;
+}
 .firm-font {
 	font-family: 'Kurale', serif;
+}
+.text-shadow-white {
+	text-shadow: .1rem .1rem .2rem #fff, .1rem .1rem .2rem #fff;
+}
+.standart-border {
+	border: .1rem solid $black-color;
 }
 .btn-cust {
 	font-weight: 400;
@@ -49,6 +58,7 @@ body {
     color: #fff;
     &:hover {
     	background-color: $firm-color + #111;
+    	color: #fff;
     }
     &:visited {
     	color: #fff;
